@@ -33,6 +33,23 @@ confirmButton.addEventListener('click', function () {
     const ageValue = ageField.value;
 
 
+
+
+    //3.2 Calcolare prezzo di base
+    let basicPrice = pricePerKm * kmsValue;
+    let rate = 'Tariffa base';
+
+
+    //3.3 Calcolare sconti
+    if (ageValue === 'minor') {
+        rate = 'Tariffa under 18';
+        basicPrice = basicPrice * 0.8;
+    } else if (ageValue === 'over') {
+        rate = 'Tariffa over 65';
+        basicPrice = basicPrice * 0.6;
+    }
+
+
 })
 
 
