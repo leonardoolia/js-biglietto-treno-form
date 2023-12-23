@@ -19,7 +19,95 @@
 </head>
 
 <body>
+    <main class="container">
+        <!-- Sezione form -->
+        <section id="ticket-form">
+            <h5 class="card-title text-center mb-2 mt-5">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h5>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row row-cols-3 text-center">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nome e cognome</label>
+                                <input type="text" class="form-control" id="name" placeholder="Nome e cognome">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="kms" class="form-label">Km da percorrere</label>
+                                <input type="number" class="form-control" id="kms" min="1" max="1000"
+                                    placeholder="Km da percorrere">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="age" class="form-label">Fascia d'età</label>
+                            <select id="age" class="form-select form-select-lg mb-3">
+                                <option selected value="">Maggiorenne</option>
+                                <option value="minor">Minorenne</option>
+                                <option value="over">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-end gap-3">
+                    <button id="confirm-button" class="btn btn-primary">Genera</button>
+                    <button id="reset-button" class="btn btn-secondary">Annulla</button>
+                </div>
 
+            </div>
+        </section>
+
+        <!-- Sezione biglietto -->
+        <section id="ticket-section" class="d-none">
+            <h5 class="card-title text-center mb-2 mt-5">IL TUO BIGLIETTO</h5>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/train.jpg" class="img-fluid rounded-start" alt="biglietto treno">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title mb-5">DETTAGLIO PASSEGGERI</h5>
+                            <h4 id="passenger-name" class="mb-5"></h4>
+                            <div class="row row-cols-4 mb-5">
+                                <div class="col">
+                                    <h6>Offerta</h6>
+                                    <div id="rate"></div>
+                                </div>
+                                <div class="col">
+                                    <h6>Carrozza</h6>
+                                    <div id="cab"></div>
+                                </div>
+                                <div class="col">
+                                    <h6>Codice CP</h6>
+                                    <div id="cp-code"></div>
+                                </div>
+                                <div class="col">
+                                    <h6>Costo biglietto</h6>
+                                    <div id="price"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="card-text mt-5 text-end mb-0">Accetto termini e condizioni</p>
+                                <p class="card-text text-end"><small class="text-body-secondary">Ultimo aggiornamento 3
+                                        minuti
+                                        fa</small>
+                                </p>
+                            </div>
+
+                            <div class="mt-3 d-flex justify-content-end">
+                                <button id="ticket-button" class="btn btn-success">Acquista</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
 </body>
 
 </html>
