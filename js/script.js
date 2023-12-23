@@ -22,5 +22,17 @@ const cpCodeNumber = document.getElementById('cp-code');
 const price = document.getElementById('price');
 
 
+//? 2. Creare variabile per il prezzo in base ai km
+const pricePerKm = 0.21;
+
+//? 3. Creare event listener per il bottone di conferma
+confirmButton.addEventListener('click', function () {
+    //3.1 Recuperare valori dal form
+    const nameValue = nameField.value.trim();
+    const kmsValue = parseInt(kmsField.value);
+    const ageValue = ageField.value;
+
+
+})
 
 
