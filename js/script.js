@@ -53,6 +53,14 @@ confirmButton.addEventListener('click', function () {
         basicPrice = basicPrice * 0.6;
     }
 
+    //3.4 Numero di carrozza casuale
+    const cab = Math.floor(Math.random() * 10) + 1;
+
+    //3.4 Numero di biglietto casuale
+    const cpCode = Math.floor(Math.random() * (100000 - 10000)) + 10000;
+
+
+
 })
 
 
