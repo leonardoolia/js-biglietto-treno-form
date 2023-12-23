@@ -48,3 +48,5 @@ Buon divertimento!
     -3.5 Mettere i dati nel biglietto
 
     -3.6 Far comparire biglietto
+
+1. Svuotare i campi
