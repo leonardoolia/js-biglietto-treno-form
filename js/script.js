@@ -32,7 +32,11 @@ confirmButton.addEventListener('click', function () {
     const kmsValue = parseInt(kmsField.value);
     const ageValue = ageField.value;
 
-
+    //! Validazione
+    if (!nameValue || nameValue.length < 2 || isNaN(kmsValue) || kmsValue < 1) {
+        alert('Ci sono degli errori nel form');
+        return;
+    };
 
 
     //3.2 Calcolare prezzo di base
@@ -48,7 +52,6 @@ confirmButton.addEventListener('click', function () {
         rate = 'Tariffa over 65';
         basicPrice = basicPrice * 0.6;
     }
-
 
 })
 
