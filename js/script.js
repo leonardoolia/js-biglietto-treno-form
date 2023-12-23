@@ -60,7 +60,16 @@ confirmButton.addEventListener('click', function () {
     const cpCode = Math.floor(Math.random() * (100000 - 10000)) + 10000;
 
 
+    //3.5 Mettere i dati nel biglietto
 
+    passengerName.innerText = nameValue;
+    ticketRate.innerText = rate;
+    cabNumber.innerText = cab;
+    cpCodeNumber.innerText = cpCode;
+    price.innerText = basicPrice.toFixed(2) + '€';
+
+    //3.6 Far comparire biglietto
+    ticketSection.classList.remove('d-none');
 })
 
 
