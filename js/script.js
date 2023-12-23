@@ -70,6 +70,13 @@ confirmButton.addEventListener('click', function () {
 
     //3.6 Far comparire biglietto
     ticketSection.classList.remove('d-none');
+});
+
+//? 4. Svuotare i campi
+resetButton.addEventListener('click', function () {
+    nameField.value = '';
+    kmsField.value = '';
+    ageField.value = '';
 })
 
 
